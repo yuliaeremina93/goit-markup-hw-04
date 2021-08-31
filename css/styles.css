@@ -395,6 +395,8 @@ justify-content: center;
   height: 44px;
   border-radius: 50%;
   background-color: white;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-link:hover,
@@ -403,7 +405,6 @@ justify-content: center;
 }
 .social-icon {
   fill: var(--icon-color);
-  padding: 12px;
 }
 
 .social-link:hover .social-icon,
