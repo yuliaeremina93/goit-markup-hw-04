@@ -218,6 +218,7 @@ margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
+
 }
 
 .footer-icon-link:hover,
@@ -382,8 +383,6 @@ justify-content: center;
   margin: 16px 32px 0 32px;
   width: 206px;
   height: 44px;
-  justify-content: center;
-  align-items: center;
 }
 .social-icon-list:not(:last-child) {
   margin-right: 10px;
@@ -395,8 +394,6 @@ justify-content: center;
   height: 44px;
   border-radius: 50%;
   background-color: white;
-  align-items: center;
-  justify-content: center;
 }
 
 .social-link:hover,
@@ -405,6 +402,7 @@ justify-content: center;
 }
 .social-icon {
   fill: var(--icon-color);
+  padding: 12px;
 }
 
 .social-link:hover .social-icon,
