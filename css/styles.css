@@ -160,6 +160,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-left {
   margin-right: 70px;
@@ -219,7 +220,7 @@ margin-bottom: 20px;
   height: 44px;
 }
 
-.footer-icon-link:hover
+.footer-icon-link:hover,
 .footer-icon-link:focus {
   background-color: var(--accent-color);
 }
@@ -228,6 +229,7 @@ margin-bottom: 20px;
   fill: white;
   padding: 12px;
 }
+
 .footer-icon:hover,
 .footer-icon:focus {
   fill: white;
@@ -273,10 +275,6 @@ margin-bottom: 20px;
 
 /* -------BENEFITS------------ */
 
-/* .benefits-container {
-  outline: 1px solid black;
-} */
-
 .benefits-list {
   display: flex;
 }
@@ -284,7 +282,7 @@ margin-bottom: 20px;
   flex-basis: calc(100% / 4);
 }
 .benefits-item:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .benefits-text-title {
   color: var(--title-color);
@@ -307,10 +305,13 @@ width: 270px;
 height: 120px;
 background-color: #F5F4FA;
 border-radius: 4px;
-
+align-items: center;
+justify-content: center;
 }
+
 .benefits-icon {
-padding: 25px 100px;
+  width: 70px;
+  height: 70px;
 }
 /* ---------WHAT ARE WE DOING----------- */
 .what-we-do {
@@ -349,7 +350,6 @@ padding: 25px 100px;
 
 .our-team-item {
   flex-basis: calc(100% / 4 - 30px);
-  /* width: 25%; */
   background-color: white;
   margin-left: 30px;
   border-radius: 0px 0px 4px 4px;
@@ -405,10 +405,12 @@ padding: 25px 100px;
   fill: var(--icon-color);
   padding: 12px;
 }
-.social-icon:hover,
-.social-icon:focus {
-  fill:white
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill:white;
 }
+
 /* OUR CLIENTS */
 .our-clients-title {
 margin-bottom: 50px;
@@ -442,10 +444,9 @@ margin-bottom: 50px;
 .our-clients-icon {
   fill: var(--icon-color);
   padding: 16px 32px;
-  border: var(--icon-color);
 }
-.our-clients-icon:hover,
-.our-clients-icon:focus {
+.our-clients-link:hover svg,
+.our-clients-link:focus svg {
 fill: var(--accent-color);
 }
 
